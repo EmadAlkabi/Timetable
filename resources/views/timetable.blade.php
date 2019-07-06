@@ -9,8 +9,8 @@
                <div class="row">
                    <div class="col-md-6">
                        <table class="table table-sm text-center table-bordered">
-                           <caption class="h4-responsive text-center text-secondary" style="caption-side: top;">الموسم الدراسي</caption>
-                           <thead class="default-color white-text">
+                           <caption class="h4 text-center text-secondary" style="caption-side: top;">الموسم الدراسي</caption>
+                           <thead>
                            <tr>
                                <th>عدد الايام الكل</th>
                                <th>عدد ايام العطل</th>
@@ -28,7 +28,7 @@
 
                        <table class="table table-sm text-center table-bordered">
                            <caption class="h4-responsive text-center text-secondary" style="caption-side: top;">المواد الدراسية</caption>
-                           <thead class="default-color white-text">
+                           <thead>
                            <tr>
                                <th class="align-middle" rowspan="2">#</th>
                                <th class="align-middle" rowspan="2">المادة</th>
@@ -75,7 +75,7 @@
 
                        <table class="table table-sm text-center table-bordered">
                            <caption class="h4-responsive text-center text-secondary" style="caption-side: top;">جدول بث الدروس الاسبوعي</caption>
-                           <thead class="default-color white-text">
+                           <thead>
                            <tr>
                                <th class="align-middle" rowspan="2">اليوم</th>
                                <th colspan="4">الدروس</th>
@@ -109,7 +109,7 @@
 
                        <table class="table table-sm text-center table-bordered">
                            <caption class="h4-responsive text-center text-secondary" style="caption-side: top;">تفاصيل عدد الدروس</caption>
-                           <thead class="default-color white-text">
+                           <thead>
                            <tr>
                                <th>الاقصى</th>
                                <th>الطلوبة</th>
@@ -139,7 +139,7 @@
                                @if(date("D", strtotime($day->date)) == "Sat")
                                    <tr>
                                        @php $index++; @endphp
-                                       <td class="default-color text-white" colspan="5">{{"الاسبوع رقم " . $index}}</td>
+                                       <td class="h4" colspan="5">{{"الاسبوع رقم " . $index}}</td>
                                    </tr>
                                @endif
                                <tr>

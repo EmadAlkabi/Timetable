@@ -137,6 +137,7 @@ class MainController extends Controller
         $courses = Course::where("level", $timetable->level)->get();
 
         $days = Day::where("timetable", $timetable->id)
+            ->orderBy("date")
             ->get();
 
         $countDays = $days->count();
